@@ -1,5 +1,7 @@
 # AsuPathFinder
 
+![Screenshot](screenshot.png)
+
 Welcome to my very own Pathfinding Visualizer! Inspired by a friend, we started discussing graph theory and I wanted to instinctively develop all the essential searching algorithms by myself. Afterwards, we also started looking into maze generation.
 
 Try it on my github website: https://asdera.github.io/AsuPathFinder
