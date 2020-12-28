@@ -98,7 +98,7 @@ function mousePressed() {
         mixNodes(0, 0, 0, k);
       }
     }
-  } else if (noiseX < (menu.on ? 0 : 2 * shielding / 3) && f > 600) {
+  } else if (noiseX < (menu.on ? 0 : 2 * shielding / 3)) {
     menu.on = !menu.on;
   } else {
     var buttonClicked = false;

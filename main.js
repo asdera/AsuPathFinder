@@ -107,8 +107,10 @@ var fontT;
 var fontD;
 
 function setup() {
+  
   canvas = createCanvas(displayWidth*2, displayHeight*2);
   menu.setup();
+  menu.x = menu.width;
   noStroke();
   pathColour = color(140, 250, 200);
   shielding = 90;

@@ -14,7 +14,6 @@ var menu = {
   turn: 12,
   setup: function() {
     this.width = windowHeight * 0.35;
-    this.x = this.width;
     this.quarter = this.width / 4;
     cur = {
       sel: 0,
