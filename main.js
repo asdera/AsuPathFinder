@@ -30,7 +30,7 @@ function nth(x, y) {
 }
 
 function mixNodes(a, b, c, d, e = 1, f = 1) {
-  if (ceil((colNum + a + c) * e) < 2 || ceil((rowNum + b + d) * f) < 2 || ceil((colNum + a + c) * e) > 100 || ceil((rowNum + b + d) * f) > 100) return;
+  if (ceil((colNum + a + c) * e) < 2 || ceil((rowNum + b + d) * f) < 2 || ceil((colNum + a + c) * e) > 160 || ceil((rowNum + b + d) * f) > 160) return;
   if (selected) {
     mouseReleased();
   }
@@ -73,7 +73,7 @@ function mixNodes(a, b, c, d, e = 1, f = 1) {
 }
 
 function bacon(lag = 1) {
-  mint = max(colNum, rowNum) > 24 ? (max(colNum, rowNum) > 64 ? 0 : 1) : 2;
+  mint = max(colNum, rowNum) > 24 ? (max(colNum, rowNum) > 64 ? 0.5 : 1) : 2;
   fullW = windowWidth - shielding * 2 - (menu.on ? menu.width : 0);
   fullH = windowHeight - shielding * 2;
   side = min(fullW / colNum, fullH / rowNum);
