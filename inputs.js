@@ -153,7 +153,7 @@ function mouseDragged() {
 
 function mouseReleased() {
   cur.sel = 0;
-  cur.colour = color(140, 250, 200);
+  cur.colour = color(191, 255, 0);
   if (selected) {
     start.change("start");
     finish.change("finish");

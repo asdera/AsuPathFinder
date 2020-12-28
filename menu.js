@@ -17,7 +17,7 @@ var menu = {
     this.quarter = this.width / 4;
     cur = {
       sel: 0,
-      colour: color(140, 250, 200),
+      colour: color(191, 255, 0),
     }
   },
   update: function() {
@@ -275,7 +275,7 @@ var menu = {
       noStroke();
       text(str(i+1), marginX + w/6*i, marginY - 2*shielding / 3);
     }
-    keyDowned(numboy==1, numboy==2, cur.sel == 2);
+    if (cur.sel) keyDowned(numboy==1, numboy==2, cur.sel == 2);
     stroke(255);
     noFill();
     if (abs(marginX + w / 4 - noiseX) < w / 6 && abs(marginY + h + 2 * shielding / 3 - mouseY) < sido / 2) fill(cur.colour);
