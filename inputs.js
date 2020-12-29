@@ -239,7 +239,7 @@ function keyPressed() {
   if ((keyCode == 32 || keyCode == 13) && !selected) {
     search(keyIsDown(16));
   }
-  if (51 <= keyCode && keyCode <= 55) actions(keyCode - 48, keyIsDown(16));
+  if (51 <= keyCode && keyCode <= 57) actions(keyCode - 48, keyIsDown(16));
   if (keyCode == 9 || keyCode == 81) {
     menu.on = !menu.on;
   }

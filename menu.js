@@ -226,7 +226,7 @@ var menu = {
     text("S/F", -2.8 * g, 6.425 * g + 0.75 * gg);
     text("Invert", -1.4 * g, 6.425 * g + 0.75 * gg);
     text("Toggle Instant Solve", -2.8 * g, 7.425 * g + 0.75 * gg);
-    text("Click Egdes to Increase", -2.6 * g, 8.45 * g + 0.75 * gg);
+    text("Click Edges to Increase", -2.6 * g, 8.45 * g + 0.75 * gg);
     text("or Decrease Grid Size", -2.6 * g, 8.7 * g + 0.75 * gg);
     
 
@@ -282,7 +282,7 @@ var menu = {
     rect(marginX + w/4, marginY+h+2*shielding/3, w/3, sido, 10);
     noFill();
     if (abs(marginX + 3 * w / 4 - noiseX) < w / 6 && abs(marginY + h + 2 * shielding / 3 - mouseY) < sido / 2) fill(cur.colour);
-    rect(marginX + 3*w/4, marginY+h+2*shielding/3, w/3, sido, 10)
+    rect(marginX + 3*w/4, marginY+h+2*shielding/3, w*0.4, sido, 10);
     fill(255);
     noStroke();
     text("Search", marginX + w/4, marginY+h+2*shielding/3);
